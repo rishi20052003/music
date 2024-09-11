@@ -1,0 +1,374 @@
+:root{
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+   
+
+}
+ html, body{
+    line-height: 1.4;
+    font-weight: 400;
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+   
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+   border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+    font-size: 1.1rem;
+}
+nav ul li:hover{
+    border-bottom: 2px solid #fff;
+    transition: border-bottom 0.3s ease;
+
+}
+
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* --------------------main------------------ */
+.hero-section{
+    background-image: url(image/hero_image.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-section h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.hero-section h3{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+button{
+    background-color: var(--purple600);
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 35px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: var(--red600);
+    transition: background-color 0.3s ease;
+
+}
+/* -------------------music-section---------------------- */
+
+.music-section{
+    background: var(--purple500);
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    gap: 30px;
+}
+.music-section h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.music-section p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+.music-section img{
+    width: 100%;
+    height: auto;
+   position: relative;
+   top: 400px;
+   margin-top: -350px;
+
+}
+.btn{
+    background-color: var(--red600);
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 35px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    
+}
+
+.btn:hover{
+    background-color: var(--purple600);
+    transition: background-color 0.3s ease;
+}
+.about-music{
+    background: var(--body);
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;  
+    text-align: center;
+    gap: 30px;
+    margin-top: 300px;
+}
+
+.about-music h3{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.about-music h4{
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-music img{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+/* --------------------video-section--------------------- */
+
+.video-section{
+   background-image: url(image/video.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    gap: 30px;
+}
+
+.video-section h3{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.video-section p{
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* ----------------------gift-section------------ */
+.gift-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+
+}
+.gift-section{
+    scroll-margin: 100px;
+}
+.col1 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    flex-basis: 45%;
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-basis: 50%;
+}
+
+.col2 h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.col2 p{
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.col2 h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.secondary-btn{
+    margin-bottom: 50px;
+}
+
+
+.footer-upper{
+    background: var(--purple600);
+    padding: 20px 0px;
+    margin-top: 60px;
+}
+.footer-upper .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link h3{
+    color: #fff;
+    font-size: 1.5rem;
+   margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid white;
+}
+.link ul li{
+   color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.footer-lower{
+    background: var(--purple300);
+    padding: 20px ;
+    color: #fff;
+    text-align: center;
+}
+/* Responsive media queries */
+
+/* For screens smaller than 600px */
+@media (max-width: 599px) {
+    .container {
+        max-width: 90%;
+    }
+
+    /* Adjust navigation menu for smaller screens */
+    nav ul {
+        gap: 20px;
+    }
+
+    /* Adjust hero section for smaller screens */
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Adjust music section for smaller screens */
+    .music-section h2 {
+        font-size: 2rem;
+    }
+
+    /* Adjust about music section for smaller screens */
+    .about-music h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust video section for smaller screens */
+    .video-section h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust gift section for smaller screens */
+    .gift-card {
+        flex-direction: column;
+    }
+
+    .col1 img {
+        flex-basis: 100%;
+    }
+
+    .col2 {
+        flex-basis: 100%;
+    }
+}
+
+/* For screens between 600px and 900px */
+@media (min-width: 600px) and (max-width: 899px) {
+    /* Adjust navigation menu for medium screens */
+    nav ul {
+        gap: 25px;
+    }
+
+    /* Adjust music section for medium screens */
+    .music-section img {
+        top: 300px;
+        margin-top: -250px;
+    }
+}
+
+/* For screens larger than 900px */
+@media (min-width: 900px) {
+    /* Adjust navigation menu for larger screens */
+    nav ul {
+        gap: 30px;
+    }
+
+    /* Adjust music section for larger screens */
+    .music-section img {
+        top: 400px;
+        margin-top: -350px;
+    }
+}
+    
